@@ -187,3 +187,27 @@ Add the following to schedule the update script at 2:00 AM daily:
 | Certbot installation steps  | `certbot-01-install.png` |
 | HTTPS browser verification  | `https-01-verified.png`  |
 | update-server.sh output log | `update-01-logs.png`     |
+
+# ISEA Lab – Day 4: Final Project, Extra Service & Reflection
+
+## Final Project Demonstration & Peer Feedback
+
+This video demonstration includes:
+- A walkthrough of all lab tasks from Day 1 to Day 3
+- Explanation of key server configurations, automation scripts, and DNS/SSL setups
+- Real-time preview of running services
+- My personal insights and learning reflections
+- Verbal response to peer feedback
+
+ **Video Link**: [Insert OneDrive/YouTube/Stream URL]
+
+##  Additional Server Service: MySQL Installation & Testing
+
+As an extended learning task, I chose to install and configure **MySQL Server** on my Ubuntu instance.
+
+###  Installation Steps
+```bash
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql
+sudo systemctl enable mysql
