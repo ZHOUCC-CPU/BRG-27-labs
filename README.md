@@ -87,3 +87,15 @@ Cloud deployment is more cost-effective in the short to medium term due to lower
 - ![3-Year Cost](./tco-02-total-3year-cost.png)
 - ![Break-even Calculation](./tco-03-break-even.png)
 - ![Analysis Summary](./tco-04-analysis-summary.png)
+## Day 2 – Afternoon: Cloud Server Setup
+
+### EC2 Instance Configuration (AWS)
+- Launched a t2.micro EC2 instance using Ubuntu 22.04 LTS
+- Created and downloaded SSH key pair: `isea-key.pem`
+- Opened ports for SSH (22), HTTP (80), HTTPS (443)
+- Region: ap-southeast-2 (Sydney)
+
+### SSH Access
+```bash
+chmod 400 isea-key.pem
+ssh -i "isea-key.pem" ubuntu@54.206.213.154
