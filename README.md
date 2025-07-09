@@ -50,46 +50,40 @@ Screenshot:
 Screenshot:  
 ![Find and Grep](screenshots/day1-install/step3-find-and-grep.png)
 
-## Day 2 – Morning
 
-### User and Group Management
-
-- Created group `group1`
-- Added users `student1`, `student2`
-- Added both users to group1 using `usermod`
-- Verified group memberships with `groups` and `/etc/group`
-- Verified users exist via `/etc/passwd`
-
-Screenshot:  
-![Add Group and Users](screenshots/day2-morning/step1-ip-a.png)  
-![Usermod Group1](screenshots/day2-morning/step2-ping.png)  
-![Group Check](screenshots/day2-morning/step3-adduser.png)  
-![Passwd File](screenshots/day2-morning/step4-passwd1.png)
-![Passwd File](screenshots/day2-morning/step4-passwd2.png)
-
-## Day 2 – Afternoon
-
-### File Permission and Ownership
-
-- Created folders for student1 and student2
-- Changed ownership of folders to respective users using `chown`
-- Verified with `ls -ld`
-
-Screenshot:  
-![Ownership Change](screenshots/day2-afternoon/step1-ownership-change.png)
-
-### User Access Restriction
-
-- Tried to access another user's folder using `su - student1`
-- Attempt to `touch` a file failed as expected
-- Exit back to original user
-
-Screenshot:  
-![User Access Test](screenshots/day2-afternoon/step2-su-access-test.png)
-
-### Checking sudo Privileges
 
 - Used `sudo -l` to list allowed sudo commands
 
 Screenshot:  
 ![Sudo Privileges](screenshots/day2-afternoon/step3-sudo-check.png)
+## Day 2 – Morning: TCO Analysis
+
+### Total Cost of Ownership (TCO)
+
+| Cost Item         | On-Premises (SGD) | Cloud (SGD/month) |
+|-------------------|-------------------|-------------------|
+| Server Hardware   | 4000              | -                 |
+| Power & UPS       | 500               | -                 |
+| Software License  | 1200              | Included          |
+| Networking        | 100               | 100               |
+| Cloud Services    | -                 | 30                |
+| IT Maintenance    | 300               | 200               |
+
+3-Year Total Cost:
+- On-Premises: SGD 21,100
+- Cloud: SGD 11,880
+
+Break-even Point: approximately 81 months
+
+Conclusion:  
+Cloud deployment is more cost-effective in the short to medium term due to lower upfront investment and better scalability. On-premises solutions may only become economical after a significantly longer time period.
+
+---
+
+### Supporting Files and Visuals
+
+- [TCO_Comparison.xlsx](./TCO_Comparison.xlsx)
+- ![Cost Table](./tco-01-cost-table.png)
+- ![3-Year Cost](./tco-02-total-3year-cost.png)
+- ![Break-even Calculation](./tco-03-break-even.png)
+- ![Analysis Summary](./tco-04-analysis-summary.png)
