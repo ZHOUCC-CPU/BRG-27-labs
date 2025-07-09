@@ -100,10 +100,90 @@ Cloud deployment is more cost-effective in the short to medium term due to lower
 ```bash
 chmod 400 isea-key.pem
 ssh -i "isea-key.pem" ubuntu@<your-public-ip>
+```
 
 ### Bash Script: `daily-log.sh`
+
 ```bash
 #!/bin/bash
 echo "==== Log at $(date) ====" >> /var/log/daily.log
 df -h >> /var/log/daily.log
 uptime >> /var/log/daily.log
+```
+
+### Cron Job
+
+```bash
+crontab -e
+```
+
+Add the following line to run the log script daily at 12:00 PM:
+
+```cron
+0 12 * * * /home/ubuntu/daily-log.sh
+```
+
+---
+
+## Day 3 – DNS & HTTPS Setup + Server Automation
+
+### DNS Setup
+
+* Registered domain: `zytestdns.tk`
+* Configured A record pointing to public IP
+* Verified DNS using `dig zytestdns.tk` or `nslookup`
+
+### SSL Certificate (Let's Encrypt)
+
+* Installed Certbot:
+
+  ```bash
+  sudo apt update
+  sudo apt install certbot python3-certbot-nginx -y
+  ```
+
+* Generated SSL certificate:
+
+  ```bash
+  sudo certbot --nginx -d zytestdns.tk
+  ```
+
+* Verified HTTPS access via browser: `https://zytestdns.tk`
+
+---
+
+## Server Automation (Update Script)
+
+### Script: `update-server.sh`
+
+```bash
+#!/bin/bash
+echo "==== Update Log at $(date) ====" >> /var/log/update.log
+sudo apt update >> /var/log/update.log
+sudo apt upgrade -y >> /var/log/update.log
+```
+
+### Cron Schedule
+
+```bash
+crontab -e
+```
+
+Add the following to schedule the update script at 2:00 AM daily:
+
+```cron
+0 2 * * * /home/ubuntu/update-server.sh
+```
+
+---
+
+## Supporting Files and Screenshots
+
+| Description                 | Suggested Filename       |
+| --------------------------- | ------------------------ |
+| SSH connection success      | `ssh-01-connect.png`     |
+| daily-log.sh cron execution | `cron-01-daily-log.png`  |
+| DNS dig result screenshot   | `dns-01-dig-result.png`  |
+| Certbot installation steps  | `certbot-01-install.png` |
+| HTTPS browser verification  | `https-01-verified.png`  |
+| update-server.sh output log | `update-01-logs.png`     |
