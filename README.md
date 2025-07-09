@@ -50,3 +50,19 @@ Screenshot:
 Screenshot:  
 ![Find and Grep](screenshots/day1-install/step3-find-and-grep.png)
 
+## Day 2 – Morning
+
+### User and Group Management
+
+- Created group `group1`
+- Added users `student1`, `student2`
+- Added both users to group1 using `usermod`
+- Verified group memberships with `groups` and `/etc/group`
+- Verified users exist via `/etc/passwd`
+
+Screenshot:  
+![Add Group and Users](screenshots/day2-morning/step1-add-group-users.png)  
+![Usermod Group1](screenshots/day2-morning/step2-usermod-group1.png)  
+![Group Check](screenshots/day2-morning/step3-groups-check.png)  
+![Passwd File](screenshots/day2-morning/step4-passwd1.png)
+![Passwd File](screenshots/day2-morning/step4-passwd2.png)
