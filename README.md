@@ -87,7 +87,7 @@ Cloud deployment is more cost-effective in the short to medium term due to lower
 - ![3-Year Cost](./tco-02-total-3year-cost.png)
 - ![Break-even Calculation](./tco-03-break-even.png)
 - ![Analysis Summary](./tco-04-analysis-summary.png)
-## Day 2 – Afternoon: Cloud Server Setup
+## Day 2 – Afternoon: Cloud Server & Automation Script
 
 ### EC2 Instance Configuration (AWS)
 - Launched a t2.micro EC2 instance using Ubuntu 22.04 LTS
@@ -96,6 +96,14 @@ Cloud deployment is more cost-effective in the short to medium term due to lower
 - Region: ap-southeast-2 (Singapore)
 
 ### SSH Access
+
 ```bash
 chmod 400 isea-key.pem
-ssh -i "isea-key.pem" ubuntu@54.206.213.154
+ssh -i "isea-key.pem" ubuntu@<your-public-ip>
+
+### Bash Script: `daily-log.sh`
+```bash
+#!/bin/bash
+echo "==== Log at $(date) ====" >> /var/log/daily.log
+df -h >> /var/log/daily.log
+uptime >> /var/log/daily.log
