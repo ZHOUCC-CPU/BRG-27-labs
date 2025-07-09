@@ -61,8 +61,8 @@ Screenshot:
 - Verified users exist via `/etc/passwd`
 
 Screenshot:  
-![Add Group and Users](screenshots/day2-morning/step1-add-group-users.png)  
-![Usermod Group1](screenshots/day2-morning/step2-usermod-group1.png)  
-![Group Check](screenshots/day2-morning/step3-groups-check.png)  
+![Add Group and Users](screenshots/day2-morning/step1-ip-a.png)  
+![Usermod Group1](screenshots/day2-morning/step2-ping.png)  
+![Group Check](screenshots/day2-morning/step3-adduser.png)  
 ![Passwd File](screenshots/day2-morning/step4-passwd1.png)
 ![Passwd File](screenshots/day2-morning/step4-passwd2.png)
