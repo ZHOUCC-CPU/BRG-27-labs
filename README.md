@@ -23,7 +23,6 @@ Installation Screenshot:
   - `/etc`, `/var`, `/home`
 - Used `man` to read manual pages (e.g., `man ls`, `man grep`)
 
-
 ## Day 1 – Afternoon
 
 ### Linux Service Management
@@ -32,10 +31,9 @@ Installation Screenshot:
 - Verified service status using: `systemctl status cron`
 
 Screenshot:  
-![Service Management](screenshots/day1-instal/step1-service-list1.png)
-![Service Management](screenshots/day1-instal//step1-service-list2.png)
-![Service Management](screenshots/day1-instal//step1-service-list3.png)
-
+![Service Management 1](screenshots/day1-install/step1-service-list1.png)  
+![Service Management 2](screenshots/day1-install/step1-service-list2.png)  
+![Service Management 3](screenshots/day1-install/step1-service-list3.png)
 
 ### Linux File Permissions
 - Viewed file permissions using: `ls -l`
@@ -43,12 +41,12 @@ Screenshot:
 - Changed ownership with: `chown`
 
 Screenshot:  
-![File Permissions](screenshots/day1-instal//step2-permission-change.png)
+![File Permissions](screenshots/day1-install/step2-permission-change.png)
 
 ### Searching Filesystem
 - Used `find` to locate files
 - Used `grep -r` to search file contents
 
 Screenshot:  
-![Find and Grep](screenshots/day1-instal//step3-find-and-grep.png)
+![Find and Grep](screenshots/day1-install/step3-find-and-grep.png)
 
