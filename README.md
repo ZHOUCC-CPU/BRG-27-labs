@@ -24,3 +24,31 @@ Installation Screenshot:
 - Used `man` to read manual pages (e.g., `man ls`, `man grep`)
 
 
+## Day 1 – Afternoon
+
+### Linux Service Management
+- Listed services with: `systemctl list-units --type=service`
+- Started and stopped service: `cron`
+- Verified service status using: `systemctl status cron`
+
+Screenshot:  
+![Service Management](screenshots/day1-afternoon/step1-service-list1.png)
+![Service Management](screenshots/day1-afternoon/step1-service-list2.png)
+![Service Management](screenshots/day1-afternoon/step1-service-list3.png)
+
+
+### Linux File Permissions
+- Viewed file permissions using: `ls -l`
+- Modified permissions with: `chmod +x`
+- Changed ownership with: `chown`
+
+Screenshot:  
+![File Permissions](screenshots/day1-afternoon/step2-permission-change.png)
+
+### Searching Filesystem
+- Used `find` to locate files
+- Used `grep -r` to search file contents
+
+Screenshot:  
+![Find and Grep](screenshots/day1-afternoon/step3-find-and-grep.png)
+
