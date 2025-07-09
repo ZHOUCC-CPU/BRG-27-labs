@@ -23,8 +23,4 @@ Installation Screenshot:
   - `/etc`, `/var`, `/home`
 - Used `man` to read manual pages (e.g., `man ls`, `man grep`)
 
----
-
-## Summary
-All Day 1 morning tasks completed. Ready to proceed to Day 1 Afternoon labs.
 
