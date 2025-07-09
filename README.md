@@ -32,9 +32,9 @@ Installation Screenshot:
 - Verified service status using: `systemctl status cron`
 
 Screenshot:  
-![Service Management](screenshots/day1-afternoon/step1-service-list1.png)
-![Service Management](screenshots/day1-afternoon/step1-service-list2.png)
-![Service Management](screenshots/day1-afternoon/step1-service-list3.png)
+![Service Management](screenshots/day1-instal/step1-service-list1.png)
+![Service Management](screenshots/day1-instal//step1-service-list2.png)
+![Service Management](screenshots/day1-instal//step1-service-list3.png)
 
 
 ### Linux File Permissions
@@ -43,12 +43,12 @@ Screenshot:
 - Changed ownership with: `chown`
 
 Screenshot:  
-![File Permissions](screenshots/day1-afternoon/step2-permission-change.png)
+![File Permissions](screenshots/day1-instal//step2-permission-change.png)
 
 ### Searching Filesystem
 - Used `find` to locate files
 - Used `grep -r` to search file contents
 
 Screenshot:  
-![Find and Grep](screenshots/day1-afternoon/step3-find-and-grep.png)
+![Find and Grep](screenshots/day1-instal//step3-find-and-grep.png)
 
