@@ -66,3 +66,30 @@ Screenshot:
 ![Group Check](screenshots/day2-morning/step3-adduser.png)  
 ![Passwd File](screenshots/day2-morning/step4-passwd1.png)
 ![Passwd File](screenshots/day2-morning/step4-passwd2.png)
+
+## Day 2 – Afternoon
+
+### File Permission and Ownership
+
+- Created folders for student1 and student2
+- Changed ownership of folders to respective users using `chown`
+- Verified with `ls -ld`
+
+Screenshot:  
+![Ownership Change](screenshots/day2-afternoon/step1-ownership-change.png)
+
+### User Access Restriction
+
+- Tried to access another user's folder using `su - student1`
+- Attempt to `touch` a file failed as expected
+- Exit back to original user
+
+Screenshot:  
+![User Access Test](screenshots/day2-afternoon/step2-su-access-test.png)
+
+### Checking sudo Privileges
+
+- Used `sudo -l` to list allowed sudo commands
+
+Screenshot:  
+![Sudo Privileges](screenshots/day2-afternoon/step3-sudo-check.png)
