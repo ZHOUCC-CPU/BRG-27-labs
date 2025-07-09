@@ -93,7 +93,7 @@ Cloud deployment is more cost-effective in the short to medium term due to lower
 - Launched a t2.micro EC2 instance using Ubuntu 22.04 LTS
 - Created and downloaded SSH key pair: `isea-key.pem`
 - Opened ports for SSH (22), HTTP (80), HTTPS (443)
-- Region: ap-southeast-2 (Sydney)
+- Region: ap-southeast-2 (Singapore)
 
 ### SSH Access
 ```bash
